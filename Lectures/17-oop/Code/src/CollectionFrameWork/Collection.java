@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Vector;
 
 public class Collection{
+    // search for collection map <...>
     public static void main ( String[] args ) {
         List<Integer> list = new ArrayList<Integer> ();
         List<Integer> list2 = new LinkedList<> ();
