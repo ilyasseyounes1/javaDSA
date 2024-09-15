@@ -5,90 +5,123 @@ public class CustomLinklist{
     private Node tail;
     private int size;
 
-    public CustomLinklist (){
+    public CustomLinklist () {
         this.size = 0;
     }
 
-    public void Display (){
+    public void Display () {
         Node temp = head;
-        while (temp != null){
-            System.out.print (temp.value + "->");
+        while ( temp != null ) {
+            System.out.print ( temp.value + "->" );
             temp = temp.next;
         }
-        System.out.println ("END");
+        System.out.println ( "END" );
     }
 
-    public void inserFirst (int value) {
-        Node node = new Node (value);
+    public void inserFirst ( int value ) {
+        Node node = new Node ( value );
         node.next = head;
         head = node;
 
-        if (tail == null) {
+        if ( tail == null ) {
             tail = node;
         }
-        size +=1;
+        size += 1;
     }
 
-    public void inserLast (int value) {
-        if (tail == null) {
-            inserFirst (value);
+    public void inserLast ( int value ) {
+        if ( tail == null ) {
+            inserFirst ( value );
             return;
         }
-        Node node = new Node (value);
+        Node node = new Node ( value );
         tail.next = node;
         tail = node;
         size++;
     }
 
-    public void insert (int value ,int position) {
-        if (position == size) {
+    public void insert ( int value , int position ) {
+        if ( position == size ) {
             inserLast ( value );
             return;
         }
-        if (position == 0) {
-            inserFirst (value);
+        if ( position == 0 ) {
+            inserFirst ( value );
             return;
         }
         Node temp = head;
-        for (int i = 1; i < position ; i++) {
+        for( int i = 1 ; i < position ; i++ ) {
             temp = temp.next;
         }
-        Node node = new Node (value,temp.next);
+        Node node = new Node ( value , temp.next );
         temp.next = node;
         size++;
     }
 
-    public int RemoveFirst (){
+    public int RemoveFirst () {
         int value = head.value;
         head = head.next;
-        if (head == null) {
+        if ( head == null ) {
             tail = null;
         }
-        size --;
+        size--;
         return value;
 
     }
-    public Node get (int index) {
+
+    public Node get ( int index ) {
         Node node = head;
-        for (int i = 0; i < index; i++) {
+        for( int i = 0 ; i < index ; i++ ) {
             node = node.next;
         }
         return node;
     }
-    public int deletLast () {
-        if (size <= 1) {
-            return RemoveFirst ();
+
+    public Node Find ( int value ) {
+        Node node = head;
+        while ( node != null ) {
+            if ( node.value == value ) {
+                return node;
+            }
+            node = node.next;
         }
-        
+        return null;
+
     }
 
-    private class Node {
+    public int delet ( int index ) {
+        if ( index == 0 ) {
+            return RemoveFirst ();
+        }
+        if ( index == size - 1 ) {
+            deletLast ();
+        }
+        Node prev = get ( index - 1 );
+        int val = prev.next.value;
+        prev.next = prev.next.next;
+        return val;
+    }
+
+    public int deletLast () {
+        if ( size <= 1 ) {
+            return RemoveFirst ();
+        }
+        Node secondLast = get ( size - 1 );
+        int val = tail.value;
+        tail = secondLast;
+        tail.next = null;
+        size--;
+        return val;
+
+    }
+
+    private class Node{
 
 
         private int value;
         private Node next;
 
-        public Node ( int value, Node next ) {
+        public Node ( int value , Node next ) {
             this.next = next;
             this.value = value;
         }
