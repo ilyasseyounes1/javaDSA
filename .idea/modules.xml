@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Lectures/01-Resources/01-Resources.iml" filepath="$PROJECT_DIR$/Lectures/01-Resources/01-Resources.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lectures/06-conditions-loops/06-conditions-loops.iml" filepath="$PROJECT_DIR$/Lectures/06-conditions-loops/06-conditions-loops.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lectures/07-methods/07-methods.iml" filepath="$PROJECT_DIR$/Lectures/07-methods/07-methods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lectures/08-arrays/08-arrays.iml" filepath="$PROJECT_DIR$/Lectures/08-arrays/08-arrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lectures/09-linear search/09-linear search.iml" filepath="$PROJECT_DIR$/Lectures/09-linear search/09-linear search.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lectures/13-patterns/13-patterns.iml" filepath="$PROJECT_DIR$/Lectures/13-patterns/13-patterns.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lectures/14-recursion/14-recursion.iml" filepath="$PROJECT_DIR$/Lectures/14-recursion/14-recursion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lectures/16-math/16-math.iml" filepath="$PROJECT_DIR$/Lectures/16-math/16-math.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lectures/18-linkedlist/18-linkedlist.iml" filepath="$PROJECT_DIR$/Lectures/18-linkedlist/18-linkedlist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lectures/17-oop/Code/Code.iml" filepath="$PROJECT_DIR$/Lectures/17-oop/Code/Code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lectures/17-oop/Code/src/Code1.iml" filepath="$PROJECT_DIR$/Lectures/17-oop/Code/src/Code1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/javaDSA.iml" filepath="$PROJECT_DIR$/.idea/javaDSA.iml" />
+    </modules>
+  </component>
+</project>
