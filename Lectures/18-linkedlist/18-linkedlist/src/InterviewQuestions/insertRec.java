@@ -59,31 +59,7 @@ package InterviewQuestions; public class insertRec{
        tail = node ;
        tail.next = null;
     }
-    public static insertRec merge  (insertRec list1 , insertRec list2 ){
-        Node l1 = list1.head;
-        Node l2 = list2.head;
-        insertRec ans = new insertRec();
 
-        while (l1 != null && l2 != null){
-           if (l1.val < l2.val){
-               ans.insertLast ( l1.val );
-               l1 = l1.next;
-           }else {
-               ans.insertLast ( l2.val );
-               l2 = l2.next;
-           }
-        }
-        while (l1 != null){
-            ans.insertLast ( l1.val );
-            l1 = l1.next;
-        }
-        while (l2 != null){
-            ans.insertLast ( l2.val );
-            l2 = l2.next;
-        }
-        return ans;
-
-    }
 
     private class Node {
         int val ;
