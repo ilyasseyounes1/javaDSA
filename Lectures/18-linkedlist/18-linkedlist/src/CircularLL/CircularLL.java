@@ -1,4 +1,4 @@
-package CircularLL;
+ package CircularLL;
 
 public class CircularLL {
 
@@ -25,7 +25,7 @@ public class CircularLL {
 
     public void display() {
         Node node = head;
-        if (head != null) {
+        if (head != null) { 
             do {
                 System.out.print(node.val + " -> ");
                 if (node.next != null) {
@@ -45,13 +45,13 @@ public class CircularLL {
         if (head == tail){
             head = null;
             tail = null;
-            return;
+            return ;
         }
 
         if (node.val == val) {
             head = head.next;
             tail.next = head;
-            return;
+            return ;
         }
 
         do {
@@ -64,12 +64,12 @@ public class CircularLL {
         } while (node != head);
 
     }
-
-    private class Node {
+// Node class :
+    private class Node  {
         int val;
         Node next;
 
-        public Node(int val) {
+        public Node(int val)  {
             this.val = val;
         }
     }
