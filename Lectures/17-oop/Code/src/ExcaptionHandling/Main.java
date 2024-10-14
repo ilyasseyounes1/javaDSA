@@ -1,4 +1,4 @@
-package OPP6.ExcaptionHandling;
+package OPP5.ExcaptionHandling;
 
 public class Main{
     public static void main ( String[] args ) {
