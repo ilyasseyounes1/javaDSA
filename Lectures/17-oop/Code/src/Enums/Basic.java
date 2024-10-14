@@ -1,4 +1,4 @@
-package Enums;
+package OPP5.Enums;
 
 public class Basic{
     enum Week implements A{

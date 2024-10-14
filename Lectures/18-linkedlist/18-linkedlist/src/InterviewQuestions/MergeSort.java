@@ -47,7 +47,7 @@ public class MergeSort{
         int val;
         Node next;
 
-        public Node ( int val , Node next ) {
+        public Node ( ) {
             this.val = val;
             this.next = next;
         }
